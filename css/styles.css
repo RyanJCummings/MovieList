@@ -1,0 +1,108 @@
+/*
+Google Font Alternatives (kind of lame ones though)
+
+Futura - Muli
+Helvetica - Source Sans Pro
+Optima - Arsenal
+Garmond - Lora
+Playfair Display - Bodini
+
+font-family: 'Muli', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Arsenal', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Playfair Display', serif;
+*/
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+
+html {
+    font-size: 16px;
+    font-family: 'Arsenal', sans-serif;
+    color: #222;
+    background-color: white;
+}
+
+#wrapper {
+    margin: auto;
+    max-width: 100%;
+    height: 100%;
+    
+}
+
+header {
+    background-color: white;
+    background-image: url("Cine-fileslogo.jpg");
+    height: 100%;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+#logo {
+    font-family: Garamond, Charcoal, sans-serif;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0 50px;
+    font-variant: small-caps;
+    letter-spacing: .05em;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    line-height: 1.0em;
+}
+
+
+
+.show {
+  display: block;
+}
+
+#content {
+    min-height: 200px;
+    /*padding: 0 50px;*/
+    background-color: white;
+    padding-bottom: 80px;
+}
+
+.username {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.userpic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: #222;
+    background-image: url("../img/blackleather.png");
+    border: 2pt solid #222;
+    float: left;
+    margin: 0 40px 20px 0px;
+}
+
+textarea {
+    width: 100%;
+    color: #777;
+    font-size: 1em;
+    padding: 1em;
+    height: 100px;
+}
+
+footer {
+    font-family: 'Muli', sans-serif;
+    font-family: 'Special Elite', cursive;
+    background-position: bottom;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    font-size: .9em;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
