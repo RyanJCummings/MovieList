@@ -56,8 +56,10 @@ echo <<<_INIT
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: darkgray;
-  box-shadow: 0px 0px 1px 1px gray inset;
+
+  color: black;
+  background-color: darkred;
+  box-shadow: 0px 0px 2px 2px black inset;
 }
 
 
@@ -93,7 +95,7 @@ echo <<<_LOGGEDIN
 
 
   <div style="float:right">
-    <a class="about" href='about.php'style="box-shadow:1px 1px 1px 1px gray inset">About</a> 
+    <a class="about" href='about.php'style="box-shadow:1px 1px 1px 1px black inset">About</a> 
   </div>
 </div>
 

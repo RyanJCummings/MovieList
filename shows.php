@@ -162,119 +162,119 @@ h3 {
 
 
 <table id="t01">
-  <tr><th colspan="3" class="tabletop">Top Ten Favorite Movies</th></tr>
+  <tr><th colspan="3" class="tabletop">Top Ten Favorite Shows</th></tr>
   <tr>
-    <th>Movie Rank</th>
-    <th>Movie Name</th>
+    <th>Show Rank</th>
+    <th>Show Name</th>
     <th>Edit</th> 
   </tr>
   <tr>
     <td>1.</td>
-    <td>Princess Bride</td>
+    <td>Firefly</td>
     <td><button>Edit</button></td>
   </tr>
   <tr>
     <td>2.</td>
-    <td>John Wick</td>
+    <td>Park and Recreation</td>
     <td><button>Edit</button></td>
   </tr>
   <tr>
     <td>3.</td>
-    <td>Monty Python and the Holy Grail</td>
+    <td>The Boys</td>
     <td><button>Edit</button></td>
   </tr>
   <tr>
     <td>4.</td>
-    <td>Shrek</td>
+    <td>Fraser</td>
     <td><button>Edit</button></td>
   </tr>
   <tr>
     <td>5.</td>
-    <td>The Big Lebowski</td>
+    <td>Malcom in the Middle</td>
     <td><button>Edit</button></td>
   </tr>
   <tr>
     <td>6.</td>
-    <td>Spaceballs</td>
+    <td>Futurama</td>
     <td><button>Edit</button></td>
   </tr>
   <tr>
     <td>7.</td>
-    <td>Megamind</td>
+    <td>Game of Thrones</td>
     <td><button>Edit</button></td>
   </tr>
   <tr>
     <td>8.</td>
-    <td>Ace Ventura when Nature Calls</td>
+    <td>Seinfeld</td>
     <td><button>Edit</button></td>
   </tr>
   <tr>
     <td>9.</td>
-    <td>Army of Darkness</td>
+    <td>Its Always Sunny in Philidelphia</td>
     <td><button>Edit</button></td>
   </tr>
   <tr>
     <td>10.</td>
-    <td>Lord of the Rings Fellowship of the ring</td>
+    <td>The Great Brittish Baking Show</td>
     <td><button>Edit</button></td>
   </tr>
 </table>
 
 <table id="t02">
-    <tr><th colspan="3" class="tabletop">Top Ten Least Favorite Movies</th></tr>
+    <tr><th colspan="3" class="tabletop">Top Ten Least Favorite Shows</th></tr>
     <tr>
-      <th>Movie Rank</th>
-      <th>Movie Name</th>
+      <th>Show Rank</th>
+      <th>Show Name</th>
       <th>Edit</th> 
     </tr>
     <tr>
       <td>1.</td>
-      <td>Princess Bride</td>
+      <td>Keeping up with the Kardashians</td>
       <td><button>Edit</button></td>
     </tr>
     <tr>
       <td>2.</td>
-      <td>John Wick</td>
+      <td>Jersey Shore</td>
       <td><button>Edit</button></td>
     </tr>
     <tr>
       <td>3.</td>
-      <td>Monty Python and the Holy Grail</td>
+      <td>Desperate Housewives</td>
       <td><button>Edit</button></td>
     </tr>
     <tr>
       <td>4.</td>
-      <td>Shrek</td>
+      <td>Sex in the City</td>
       <td><button>Edit</button></td>
     </tr>
     <tr>
       <td>5.</td>
-      <td>The Big Lebowski</td>
+      <td>CSI Miami</td>
       <td><button>Edit</button></td>
     </tr>
     <tr>
       <td>6.</td>
-      <td>Spaceballs</td>
+      <td>The Bachelor</td>
       <td><button>Edit</button></td>
     </tr>
     <tr>
       <td>7.</td>
-      <td>Megamind</td>
+      <td>The Bachelorette</td>
       <td><button>Edit</button></td>
     </tr>
     <tr>
       <td>8.</td>
-      <td>Ace Ventura when Nature Calls</td>
+      <td>Info Wars</td>
       <td><button>Edit</button></td>
     </tr>
     <tr>
       <td>9.</td>
-      <td>Army of Darkness</td>
+      <td>Beverly Hills</td>
       <td><button>Edit</button></td>
     </tr>
     <tr>
       <td>10.</td>
-      <td>Lord of the Rings Fellowship of the ring</td>
+      <td>I wanna Marry Harry</td>
       <td><button>Edit</button></td>
     </tr>
   </table>

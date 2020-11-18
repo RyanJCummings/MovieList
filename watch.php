@@ -7,10 +7,14 @@ echo <<<_HONORABLE
 	text-align: center;
 	margin-top: 50px;
 	padding-top: 150 px;
+	color: white;
 	
 }
 #content{
-	background-color: grey;
+	background-color: #4E1003;
+}
+body {
+	background-color: black;
 }
 ul{
 padding:150px;
