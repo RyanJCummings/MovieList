@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 $dbhost  = 'localhost';
 
-$dbname  = 'db34';   // Modify these...
+$dbname  = 'db34b';   // Modify these...
 $dbuser  = 'user34';   // ...variables according
 $dbpass  = '34fill';   // ...to your installation
 
@@ -40,7 +40,7 @@ function sanitizeString($var){
     $var = strip_tags($var);
     $var = htmlentities($var);
     //if (get_magic_quotes_gpc())
-    $var = stripslashes($var);
+    //$var = stripslashes($var);
     return $connection->real_escape_string($var);
 }
 
