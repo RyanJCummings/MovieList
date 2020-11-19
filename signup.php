@@ -1,5 +1,6 @@
 <?php
 require_once 'header.php';
+require 'functions.php';
 
 echo <<<_END
 <script>
@@ -21,8 +22,8 @@ if (isset($_SESSION['user']))
     destroySession();
 
 if (isset($_POST['user'])) {
-    $user = $_POST['user'];
-    $pass = $_POST['pass'];
+    $user = sanitizeString($_POST['user']);
+    $pass = sanitizeString($_POST['pass']);
     
     if ($user == "" || $pass == "")
         $error = 'Not all fields were entered<br><br>';
