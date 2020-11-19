@@ -75,8 +75,15 @@ echo <<<_INIT
 
 _INIT;
 
+require_once 'functions.php';
 
-
+echo <<<_HEADER_OPEN
+    
+    <body>
+        <div id="wrapper">
+        <header>
+            <div id='logo'>$clubstr</div>
+_HEADER_OPEN;
 
 echo <<<_LOGGEDIN
 
