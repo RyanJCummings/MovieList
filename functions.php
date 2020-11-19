@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 $dbhost  = 'localhost';
 
-$dbname  = 'db34b';   // Modify these...
+$dbname  = 'db34';   // Modify these...
 $dbuser  = 'user34';   // ...variables according
 $dbpass  = '34fill';   // ...to your installation
 
