@@ -1,6 +1,6 @@
 <?php
 require_once 'header.php';
-require 'functions.php';
+include 'functions.php';
 
 echo <<<_END
 <script>
