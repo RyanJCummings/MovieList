@@ -5,9 +5,9 @@ error_reporting(E_ALL);
 $dbhost  = 'localhost';
 
 
-$dbname  = 'db24';   // Modify these...
-$dbuser  = 'user24';   // ...variables according
-$dbpass  = '24samp';   // ...to your installation
+$dbname  = 'db34B';   // Modify these...
+$dbuser  = 'user34';   // ...variables according
+$dbpass  = '34fill';   // ...to your installation
 
 
 $connection = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
