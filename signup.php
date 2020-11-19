@@ -21,8 +21,8 @@ if (isset($_SESSION['user']))
     destroySession();
 
 if (isset($_POST['user'])) {
-    $user = sanitizeString($_POST['user']);
-    $pass = sanitizeString($_POST['pass']);
+    $user = $_POST['user'];
+    $pass = $_POST['pass'];
     
     if ($user == "" || $pass == "")
         $error = 'Not all fields were entered<br><br>';
