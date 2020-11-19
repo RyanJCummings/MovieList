@@ -14,30 +14,26 @@ echo <<<_MOVIES
 
  body  {
   background-color: black;
-background-image: url("curtain02.jpg");
+  background-image: url("curtain02.jpg");
 }
 
 #content {
   background-color: #4E1003;
-
-        height: 100%;
-        background-position: center;
-	/*background-repeat: no-repeat;*/
-	background-size: 100%;
-	width: 100%;       
-
+  height: 100%;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;       
   background-image: url("curtain02.jpg");
 }
 table {
   margin-top: 75px;
-  width:45%;
+  width:35%;
 }
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   border-radius: 2px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-
 }
 th, td {
   padding: 15px;
@@ -60,38 +56,35 @@ th {
   color: white;
 }
 .tabletop {
-    background-color: black;
-    text-align: center;
-    font-size: larger;
+  background-color: black;
+  text-align: center;
+  font-size: larger;
 }
 #t01 {
-    margin-left: 40px;
-    display: inline-table;
-
+  margin-left: 4%;
+  display: inline-table;
 }
 #t02 {
-    margin-left: 40px;
-    display: inline-table;
+  margin-left: 1%;
+  display: inline-table;
 }
 h3 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: white;
 }
-
 
 #signup{
-	padding: 15px;
-		padding-top: 15px;
-		padding-right: 15px;
-		padding-bottom: 15px;
-		padding-left: 15px;
-	box-shadow: 0 1px 1px 0 rgba(30,11,39,.07), 0 2px 4px 0 rgba(27,9,36,.11);
+  padding: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  box-shadow: 0 1px 1px 0 rgba(30,11,39,.07), 0 2px 4px 0 rgba(27,9,36,.11);
 }
 form{
-	display: block;
-	margin-top 0m;
-}
+  display: block;
 
+}
 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -194,6 +187,43 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
+
+#omdb {
+    vertical-align: top;
+    margin-top:75px;
+    margin-left: 1%;
+    display:inline-block;
+    border-width: 1px;
+    border-color: black;
+    background: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 675px;
+}
+
+#answer {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-shadow: 5px 5px black;
+}
+
+#qurybox {
+    margin-left: 20%;
+    margin-bottom: 5px;
+    margin-top: 5px; 
+}
+
+#titlequery {
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   text-align: center;
+   font-weight: bold;
+   font-size: 20px;
+   color: white;
+   text-shadow: 5px 5px black;
+}
+
 </style>
 </head>
 <body>
@@ -256,6 +286,27 @@ img {vertical-align: middle;}
     <td><button>Edit</button></td>
   </tr>
 </table>
+
+
+<div id="omdb">
+
+<h1 id="titlequery">Please Enter the Title of your movie for Details</h1>
+<input onkeyup="getanswer(document.getElementById('qurybox').value)" id="qurybox">
+<div id="answer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script> var data;
+function getanswer(q){
+$.get("https://www.omdbapi.com/?s="+q+"&apikey=ba1f4581", function(rawdata){
+var rawstring =JSON.stringify(rawdata);
+data =JSON.parse(rawstring);
+var year = data.Search[0].Year;
+var imdburl="https://www.imdb.com/title/"+data.Search[0].imdbID+"/";
+
+var posterurl =data.Search[0].Poster;
+document.getElementById('answer').innerHTML= "<img src= '"+posterurl+"'><h2>Year Released:"+year+"</h2><h3> IMDB page: <a href='"+imdburl+"'target='_blank'>"+imdburl+"</a></h3>"; }); }</script>
+</div>
+
 
 <table id="t02">
     <tr><th colspan="3" class="tabletop">Top Ten Least Favorite Movies</th></tr>
