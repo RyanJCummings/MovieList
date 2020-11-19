@@ -9,6 +9,114 @@ echo <<<_Home
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        .wrapper {
+            height: 100vh;
+            width: 150vh;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .backdrop {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        /*.stage_floor {*/
+        /*    content: '';*/
+        /*    position: absolute;*/
+        /*    z-index: 1;*/
+        /*    top: 10%;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    height: 150%;*/
+        /*    background-image: radial-gradient(rgba(54,90,143,0.9), rgba(54,90,143,0));*/
+        /*    transform: scale(1.0,0.3);*/
+        /*}*/
+        .stage_highlight {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 25vh;
+            width: 100vh;
+            height: 100%;
+            overflow: hidden;
+            background-image: radial-gradient(ellipse closest-side at 50% 82%, rgb(245,246,247), rgba(84,120,173,0) 100%);
+            animation: move_highlight 5s linear infinite;
+        }
+        .spotlight_swivel {
+            animation: rotate_spotlight 5s linear infinite;
+        }
+        .lamp {
+            position: absolute;
+            z-index: 1;
+            width: 40vh;
+            height: 400vh;
+            background-image: radial-gradient(ellipse, rgba(82,116,168,0.5), rgba(82,116,168,0.2) 25%, rgba(82,116,168,0) 50%);
+            top:-220vh;
+            left:55vh;
+            transform: perspective(23vh) rotateX(30deg);
+        }
+        .spotlight {
+            opacity: 0.5;
+            transform: scale(1.5,3);
+            position: absolute;
+            z-index: 1;
+            top: -20vh;
+            left: calc(50% - 75vh);
+        }
+        .spotlight::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: -50vh;
+            background-image: radial-gradient(ellipse closest-corner at 75% 75%, rgba(55,89,138,0.2), rgba(55,89,138,0));
+            border-radius: 100%;
+            width: 100vh;
+            height: 100vh;
+            clip: rect(50vh, 100vh, 100vh, 50vh);
+            transform: rotate(45deg);
+        }
+
+        @keyframes rotate_spotlight {
+            0% {
+                transform: rotate(0deg) scaleY(1) translateY(0);
+            }
+            25% {
+                transform: rotate(-15deg) scaleY(1.1) translateY(-3vh);
+            }
+            50% {
+                transform: rotate(0deg) scaleY(1) translateY(0);
+            }
+            75% {
+                transform: rotate(15deg) scaleY(1.1) translateY(-3vh);
+            }
+        }
+
+        @keyframes move_highlight {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(25vh);
+            }
+            50% {
+                transform: translateX(0);
+            }
+            75% {
+                transform: translateX(-25vh);
+            }
+        }
         #content {
             background-color: #4E1003;
             height: 100%;
@@ -41,20 +149,19 @@ echo <<<_Home
             position:relative;
         }
         movie{
+            position: absolute;
+            z-index: 1000 !important;
             border: #4E1003;
-        }
-        .container:before{
-
         }
         .container{
             display:inline-block;
             margin-top: 200px;
             width: 50rem;
             height: 40rem;
-            box-shadow: 0 0 1rem 0 rbga(0,0,0,.2);
+            /*box-shadow: 0 0 1rem 0 rbga(0,0,0,.2);*/
             content: "";
-            /*position: absolute;*/
             position: relative;
+            z-index: 1000 !important;
             background:inherit;
             top: 0;
             left: 0;
@@ -75,11 +182,28 @@ echo <<<_Home
 
 <body>
 <h1>Toto, I've a feeling we're not in Kansas anymore <h1>
-<div id="movie">
+
+    <div class="wrapper">
+
+        <div class="backdrop"></div>
+
+        <div class="stage_floor"></div>
+
+        <div class="stage_highlight"></div>
+
+        <div class="spotlight_swivel">
+
+            <div class="lamp"></div>
+
+            <div class="spotlight"></div>
+
+        </div>
+
+<div id="movie" style=" position: relative; z-index: 1000">
     <iframe  width="956" height="538" src="https://www.youtube.com/embed/4HvE_bz9imA" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<div class="container">
+<div class="container" style="position: relative; z-index: 1000">
     <div id="test">
         <h1 style="color:white; text-shadow: 10px 10px black;">What, Why, and How</h1>
         <p style="color:white; text-shadow: 7px 7px black;"> Our initial and main goal was to establish a place where movie and show lovers can catalog and curate lists of their favorite cinematic adventures. Within each
@@ -92,7 +216,6 @@ echo <<<_Home
 
 
 </body>
-
 
 _Home;
 
