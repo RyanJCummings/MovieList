@@ -2,9 +2,9 @@
 require_once 'header.php';
 
 echo <<<_Home
-
-<head>
 <title>Cine-Files</title>
+<head>
+
 <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 <style>

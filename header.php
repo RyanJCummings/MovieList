@@ -7,6 +7,7 @@ $userstr = '';
 echo <<<_INIT
 <!DOCTYPE html> 
 <html>
+<title>Cine-Files</title>
     <head>
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'> 
@@ -69,7 +70,9 @@ echo <<<_INIT
 	
 }
 	</style>
-        </head>
+	</head>
+
+
 _INIT;
 
 
