@@ -18,7 +18,7 @@ function createTable($name, $query){
 function queryMysql($query) {
     global $connection;
     $result = $connection->query($query);
-    if (!$result) die("Fatal Error 2");
+    //if (!$result) die("Fatal Error 2");
     return $result;
 }
 

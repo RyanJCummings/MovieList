@@ -28,7 +28,6 @@ if (isset($_POST['user'])) {
     if ($user == "" || $pass == "")
         $error = 'Not all fields were entered<br><br>';
     else {
-        console_log("made it!");
         $result = queryMysql("SELECT * FROM members WHERE user='$user'");
 
         if ($result->num_rows)
