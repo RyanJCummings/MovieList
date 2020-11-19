@@ -11,9 +11,9 @@ echo <<<_Home
   #content {
 	background-color: #4E1003;
   	height: 100%;
-  	background-position: center;
+	/*background-position: center;*/
   	background-size: 100%;
-  	position: relative;	
+	/*position: relative;*/	
 	background-image: url("curtain02.jpg");		
  }
 	
