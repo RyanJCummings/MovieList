@@ -104,6 +104,13 @@ img {vertical-align: middle;}
 
  #content {
 	background-color: #4E1003;
+        height: 100%;
+        background-position: center;
+        /*background-repeat: no-repeat;*/
+        background-size: 100%;
+        width: 100%;
+
+  background-image: url("curtain02.jpg");
 
  }
 table {

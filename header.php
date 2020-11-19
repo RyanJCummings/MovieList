@@ -25,7 +25,7 @@ echo <<<_INIT
 .navbar {
   overflow: hidden;
   background-color: #0A0A0A;
-  margin-top: 110px;
+  margin-top: 170px;
 }
 
 .navbar a {
@@ -43,7 +43,7 @@ echo <<<_INIT
   float: left;
   overflow: hidden;
 }
-
+/*
 .dropdown .dropbtn {
   font-size: 16px;  
   border: none;
@@ -54,7 +54,7 @@ echo <<<_INIT
   font-family: inherit;
   margin: 0;
 }
-
+*/
 .navbar a:hover, .dropdown:hover .dropbtn {
 
   color: black;
