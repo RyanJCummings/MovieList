@@ -19,12 +19,12 @@ createTable('members',
 
 createTable('movies',
             'id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-            title VARCHAR(50)')
+            title VARCHAR(50)');
 
 createTable('tv_shows',
             'id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-            title VARCHAR(50)')
-
+            title VARCHAR(50)');
+?>
 
     <p>The database is ready to go.</p>
 </body>
