@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 $dbhost  = 'localhost';
 
 $dbname  = 'db34b';   // Modify these...
@@ -15,10 +18,11 @@ function createTable($name, $query){
     echo "Table '$name' created or already exists.<br>";
 }
 
+
 function queryMysql($query) {
     global $connection;
     $result = $connection->query($query);
-    //if (!$result) die("Fatal Error 2");
+    if (!$result) die("Fatal Error 2");
     return $result;
 }
 
