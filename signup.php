@@ -1,6 +1,6 @@
 <?php
 require_once 'header.php';
-include 'functions.php';
+require_once 'functions.php';
 
 echo <<<_END
 <script>
@@ -28,7 +28,6 @@ if (isset($_POST['user'])) {
     if ($user == "" || $pass == "")
         $error = 'Not all fields were entered<br><br>';
     else {
-        queryMysql("INSERT INTO members VALUES('$user', '$pass')");
         $result = queryMysql("SELECT * FROM members WHERE user='$user'");
 
         if ($result->num_rows)
