@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 $clubstr = "";
@@ -75,6 +76,7 @@ echo <<<_INIT
 
 _INIT;
 
+require_once 'functions.php';
 
 
 echo <<<_HEADER_OPEN
