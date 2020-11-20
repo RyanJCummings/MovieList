@@ -19,11 +19,11 @@ createTable('members',
 	    INDEX(user(6))');
 
 createTable('movies',
-            'id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            'id INT PRIMARY KEY,
             title VARCHAR(50)');
 
 createTable('tv_shows',
-            'id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            'id INT PRIMARY KEY,
             title VARCHAR(50)');
 
 ?>
