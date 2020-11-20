@@ -15,16 +15,18 @@ require_once 'functions.php';
 createTable('members',
             'user VARCHAR(16),
             pass VARCHAR(16),
-
-	    INDEX(user(6))');
+	    user_id INT NOT NULL AUTO_INCREMENT,
+	    PRIMARY KEY(user_id)');
 
 createTable('movies',
-            'id INT PRIMARY KEY,
-            title VARCHAR(50)');
+            'movie_id INT NOT NULL AUTO_INCREMENT,
+	    title VARCHAR(50),
+	    PRIMARY KEY(movie_id)');
 
 createTable('tv_shows',
-            'id INT PRIMARY KEY,
-            title VARCHAR(50)');
+            'tv_id INT NOT NULL AUTO_INCREMENT,
+	    title VARCHAR(50),
+	    PRIMARY KEY(tv_id)');
 
 ?>
 
