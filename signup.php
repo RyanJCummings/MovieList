@@ -2,71 +2,9 @@
 require_once 'header.php';
 
 echo <<<_END
-<<<<<<< HEAD
-=======
-
 
 <style>
-body{
-  background-color: black;
-}
 
-h1 {
-  margin-top:75px;
-  color: white;
-}
-
-
-h2{
-  margin-top:5%;
-  font-size:30px;
-  color: red;
-  /*color:darken(#e5e5e5, 50%);*/
-  border-bottom:solid 1px #e5e5e5;
-  }
-input[type="text"]
-  {
-    background: #fff;
-    border: 1px solid #dbdbdb;
-    font-size: 1.2em;
-    padding: .5em .5em;
-    border-radius: 2px;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-    margin-bottom: 15px;
-    }
-input[type = "password"]
-    {
-        margin-top:15px;
-        background: #fff;
-        border: 1px solid #dbdbdb;
-        font-size: 1.2em;
-        padding: .5em .5em;
-        border-radius: 2px;
-        display: inline-block;
-        border: none;
-	background: #f1f1f1;
-        margin-left: 2px;
-        }
-     
-input[type="submit"] {
-            
-            background-color: darkred;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            margin-left:170px;
-            border: none;
-            cursor: pointer;
-            width: 10%;
-            opacity: 0.9;
-        }
-  </style>  
-
-
-
->>>>>>> a8e7c24ff899b5c9c82c6aecda71f37004847167
 <script>
     function checkUser(user) {
         if (user.value == '') {
@@ -104,8 +42,6 @@ if (isset($_POST['user'])) {
 }
 
 echo <<<_END
-
-<<<<<<< HEAD
 
 
 
@@ -463,30 +399,7 @@ Animation Keyframes
         <input type="password" name="pass"  placeholder="Password" value='$pass' required>
           
           <button>Sign Up</button> 
-=======
 
-<h1>Welcome to the signup page</h1>
-
-
-    <form method='post' action='signup.php'>$error
-        <div data-role='fieldcontain'>
-            <label></label>
-            <h3>Create username and password</h3>
-        </div>
-        <div data-role='fieldcontain'>
-            <label>Username</label>
-            <input type='text' maxlength='16' name='user' value='$user' onBlur='checkUser(this)'>
-            <label></label>
-            <!-- <div id='used'>&nbsp;</div> -->
-        </div>
-        <div data-role='fieldcontain'>
-            <label>Password</label>
-            <input type='text' maxlength='16' name='pass' value='$pass'>
-        </div>
-        <div data-role='fieldcontain'>
-            <label></label>
-            <input data-transition='slide' type='submit' value='Sign Up'>
->>>>>>> a8e7c24ff899b5c9c82c6aecda71f37004847167
         </div>
       </form>
       <div class="hexagons">
