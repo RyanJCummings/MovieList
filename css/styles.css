@@ -20,7 +20,7 @@ html {
     font-size: 16px;
     font-family: 'Arsenal', sans-serif;
     color: #222;
-    background-color: white;
+    background-color: black;
 }
 
 #wrapper {
@@ -31,7 +31,7 @@ html {
 }
 
 header {
-    background-color: white;
+    background-color: black;
     background-image: url("Cine-fileslogo.jpg");
     height: 210px;
     position: relative;
@@ -60,7 +60,7 @@ header {
 #content {
     min-height: 200px;
     /*padding: 0 50px;*/
-    background-color: white;
+    background-color: black;
     padding-bottom: 80px;
 }
 

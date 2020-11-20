@@ -115,7 +115,7 @@ img {vertical-align: middle;}
  }
 table {
   margin-top: 75px;
-  width:45%;
+  width:35%;
 }
 table, th, td {
   border: 1px solid black;
@@ -149,17 +149,52 @@ th {
     font-size: larger;
 }
 #t01 {
-    margin-left: 40px;
+    margin-left: 4%;
     display: inline-table;
 
 }
 #t02 {
-    margin-left: 40px;
+    margin-left: 1%;
     display: inline-table;
 }
 h3 {
     font-family: 'Special Elite', cursive;
     color: white;
+}
+#omdb {
+    vertical-align: top;
+    margin-top:75px;
+    margin-left: 1%;
+    display:inline-block;
+    border-width: 1px;
+    border-color: black;
+    background: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 675px;
+}
+
+#answer {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-shadow: 5px 5px black;
+}
+
+#qurybox {
+    margin-left: 20%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#titlequery {
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   text-align: center;
+   font-weight: bold;
+   font-size: 20px;
+   color: white;
+   text-shadow: 5px 5px black;
 }
 
 
@@ -226,6 +261,28 @@ h3 {
     <td><button>Edit</button></td>
   </tr>
 </table>
+
+<div id="omdb">
+
+<h1 id="titlequery">Please Enter the Title of your show for Details</h1>
+
+<input onkeyup="getanswer(document.getElementById('qurybox').value)" id="qurybox">
+<div id="answer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script> var data;
+function getanswer(q){
+$.get("https://www.omdbapi.com/?s="+q+"&apikey=ba1f4581", function(rawdata){
+var rawstring =JSON.stringify(rawdata);
+data =JSON.parse(rawstring);
+var year = data.Search[0].Year;
+var imdburl="https://www.imdb.com/title/"+data.Search[0].imdbID+"/";
+
+var posterurl =data.Search[0].Poster;
+document.getElementById('answer').innerHTML= "<img src= '"+posterurl+"'><p>Year Released:"+year+"</p><p> IMDB page: <a href='"+imdburl+"'target='_blank'>"+imdburl+"</a></p>"; }); }</script>
+</div>
+
+
 
 <table id="t02">
     <tr><th colspan="3" class="tabletop">Top Ten Least Favorite Shows</th></tr>

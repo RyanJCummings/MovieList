@@ -1,5 +1,10 @@
 <?php
-session_start();
+
+if(!isset($_SESSION)) 
+{ 
+session_start(); 
+}
+
 
 $clubstr = "";
 $userstr = '';
@@ -40,22 +45,6 @@ echo <<<_INIT
 
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-/*
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-*/
 .navbar a:hover, .dropdown:hover .dropbtn {
 
   color: black;
@@ -75,7 +64,17 @@ echo <<<_INIT
 
 _INIT;
 
+
+
 require_once 'functions.php';
+if (isset($_SESSION['user'])) {
+    $user     = $_SESSION['user'];
+    $loggedin = TRUE;
+    $userstr  = "Logged in as: $user";
+}
+else $loggedin = FALSE;
+
+
 
 echo <<<_HEADER_OPEN
     
@@ -84,6 +83,10 @@ echo <<<_HEADER_OPEN
         <header>
             <div id='logo'>$clubstr</div>
 _HEADER_OPEN;
+
+
+if($loggedin){
+
 
 echo <<<_LOGGEDIN
 
@@ -94,7 +97,7 @@ echo <<<_LOGGEDIN
     <a href='shows.php'>Top Shows</a>
     <a href='watch.php'>Watch List</a>
     <a href='honorable.php'>Honorable Mentions</a>
-  
+    <a href='logout.php'>Logout</a>  
 
 
   <div style="float:right">
@@ -104,6 +107,26 @@ echo <<<_LOGGEDIN
 
 
 _LOGGEDIN;
+
+
+}
+else{
+echo <<<_GUEST
+            <div class="navbar">
+                <a href='index.php'>Home</a>
+                <a href='signup.php'>Sign Up</a>
+                <a href='login.php'>Log In</a>
+		<a href='logout.php'>Logout</a>
+
+
+  <div style="float:right">
+    <a class="about" href='about.php'style="box-shadow:1px 1px 1px 1px black inset">About</a>
+  </div>
+</div>
+
+_GUEST;
+ }
+
 
 
 echo <<<_HEADER_CLOSE
