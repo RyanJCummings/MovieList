@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 $dbhost  = 'localhost';
 
 
-$dbname  = 'db34B';   // Modify these...
+$dbname  = 'db34b';   // Modify these...
 $dbuser  = 'user34';   // ...variables according
 $dbpass  = '34fill';   // ...to your installation
 
