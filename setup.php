@@ -42,3 +42,5 @@ createTable('profiles',
     <p>The database is ready to go.</p>
 </body>
 </html>
+
+
