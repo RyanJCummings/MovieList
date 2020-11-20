@@ -39,6 +39,10 @@ if (isset($_POST['user'])) {
 }
 
 echo <<<_END
+
+
+
+
 <style>
 @import "https://fonts.googleapis.com/css?family=Ubuntu:400,700italic";
 @import "https://fonts.googleapis.com/css?family=Cabin:400";
@@ -379,15 +383,18 @@ Animation Keyframes
 
 </style>
 
+
+
+
 <div id="logo"> 
   <h1><i>The Cine-Files</i></h1>
 </div> 
 <section class="stark-login">
   
-  <form action="" method="">
+  <form action="signup.php" method="post">$error
     <div id="fade-box">
-      <input type="text" name="username" id="username" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
+      <input type="text" name="user" id="username" placeholder="Username" value='$user' required>
+        <input type="password" name="pass"  placeholder="Password" value='$pass' required>
           
           <button>Sign Up</button> 
         </div>
@@ -474,6 +481,7 @@ Animation Keyframes
               <li></li>
               <li></li>
             </ul>
+
 
 _END;
   require_once 'footer.php';
