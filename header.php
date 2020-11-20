@@ -116,7 +116,6 @@ echo <<<_GUEST
                 <a href='index.php'>Home</a>
                 <a href='signup.php'>Sign Up</a>
                 <a href='login.php'>Log In</a>
-		<a href='logout.php'>Logout</a>
 
 
   <div style="float:right">
