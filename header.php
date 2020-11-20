@@ -76,6 +76,12 @@ echo <<<_INIT
 _INIT;
 
 require_once 'functions.php';
+if (isset($_SESSION['user'])) {
+    $user     = $_SESSION['user'];
+    $loggedin = TRUE;
+    $userstr  = "Logged in as: $user";
+}
+else $loggedin = FALSE;
 
 echo <<<_HEADER_OPEN
     
@@ -84,6 +90,8 @@ echo <<<_HEADER_OPEN
         <header>
             <div id='logo'>$clubstr</div>
 _HEADER_OPEN;
+
+if($loggedin){
 
 echo <<<_LOGGEDIN
 
@@ -94,6 +102,8 @@ echo <<<_LOGGEDIN
     <a href='shows.php'>Top Shows</a>
     <a href='watch.php'>Watch List</a>
     <a href='honorable.php'>Honorable Mentions</a>
+    <a href='logout.php'>Logout</a>
+    
   
 
 
@@ -104,6 +114,16 @@ echo <<<_LOGGEDIN
 
 
 _LOGGEDIN;
+}else{
+echo <<<_GUEST
+
+            <div class="navbar">
+                <<a href='index.php'>Home</a>
+                <a href='signup.php'>Sign Up</a>
+                <a href='login.php'>Log In</a>
+            </div>
+_GUEST;
+ }
 
 
 echo <<<_HEADER_CLOSE
