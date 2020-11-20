@@ -41,6 +41,7 @@ if ($view != "") {
         <textarea name='text'></textarea><br>
     </fieldset>
 
+
     <input data-transition='slide' type='submit' value='Post Message'>
 </form><br>
 _END;
@@ -82,4 +83,6 @@ if (!$num)
 echo "<br><a data-role='button' href='messages.php?view=$view'>Refresh messages</a>";
 
 require_once 'footer.php';
+
 ?>
+
