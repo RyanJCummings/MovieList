@@ -65,6 +65,7 @@ echo <<<_INIT
 _INIT;
 
 
+
 require_once 'functions.php';
 if (isset($_SESSION['user'])) {
     $user     = $_SESSION['user'];
@@ -72,6 +73,7 @@ if (isset($_SESSION['user'])) {
     $userstr  = "Logged in as: $user";
 }
 else $loggedin = FALSE;
+
 
 
 echo <<<_HEADER_OPEN

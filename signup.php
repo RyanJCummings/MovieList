@@ -3,6 +3,7 @@ require_once 'header.php';
 
 echo <<<_END
 
+
 <style>
 body{
   background-color: black;
@@ -62,12 +63,14 @@ input[type="submit"] {
   </style>  
 
 
+
 <script>
     function checkUser(user) {
         if (user.value == '') {
             $('#used').html('&nbsp;');
             return;
         }
+
         $.post('checkuser.php', { user : user.value }, function(data) {
             $('#used').html(data)
         });
@@ -99,7 +102,9 @@ if (isset($_POST['user'])) {
 
 echo <<<_END
 
+
 <h1>Welcome to the signup page</h1>
+
 
     <form method='post' action='signup.php'>$error
         <div data-role='fieldcontain'>
