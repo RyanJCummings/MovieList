@@ -198,69 +198,93 @@ h3 {
 }
 
 
+.button {
+  
+  width: 100%;
+  height: 100%
+  border: none;
+  background-color: gray;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 9px #999;
+  font-size: 1.5em;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+.button:active {
+ background-color: black;
+ box-shadow: 0 5px #666;
+ transform: translateY(4px);
+}
+
+
+.button:hover:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
 </style>
 </head>
 <body>
 
 
 <table id="t01">
-  <tr><th colspan="3" class="tabletop">Top Ten Favorite Shows</th></tr>
+  <tr><th colspan="2" class="tabletop">Top Ten Favorite Shows</th></tr>
   <tr>
-    <th>Show Rank</th>
     <th>Show Name</th>
-    <th>Edit</th> 
+    <th>Remove</th> 
   </tr>
   <tr>
-    <td>1.</td>
     <td>Firefly</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>2.</td>
     <td>Park and Recreation</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>3.</td>
     <td>The Boys</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>4.</td>
     <td>Fraser</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>5.</td>
     <td>Malcom in the Middle</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>6.</td>
     <td>Futurama</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>7.</td>
     <td>Game of Thrones</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>8.</td>
     <td>Seinfeld</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>9.</td>
     <td>Its Always Sunny in Philidelphia</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>10.</td>
     <td>The Great Brittish Baking Show</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
+    <tr>
+        <td colspan="2"><button class="button">Add a Cinematic to the list here!</button></td>
+    </tr>
 </table>
+
+
 
 <div id="omdb">
 
@@ -285,63 +309,56 @@ document.getElementById('answer').innerHTML= "<img src= '"+posterurl+"'><p>Year 
 
 
 <table id="t02">
-    <tr><th colspan="3" class="tabletop">Top Ten Least Favorite Shows</th></tr>
+    <tr><th colspan="2" class="tabletop">Top Ten Least Favorite Shows</th></tr>
     <tr>
-      <th>Show Rank</th>
       <th>Show Name</th>
-      <th>Edit</th> 
+      <th>Remove</th> 
     </tr>
     <tr>
-      <td>1.</td>
       <td>Keeping up with the Kardashians</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>2.</td>
       <td>Jersey Shore</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>3.</td>
       <td>Desperate Housewives</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>4.</td>
       <td>Sex in the City</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>5.</td>
       <td>CSI Miami</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>6.</td>
       <td>The Bachelor</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>7.</td>
       <td>The Bachelorette</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>8.</td>
       <td>Info Wars</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>9.</td>
       <td>Beverly Hills</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>10.</td>
       <td>I wanna Marry Harry</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
+    </tr>
+    <tr>
+	<td colspan="2"><button class="button">Add a Cinematic to the list here!</button></td>
     </tr>
   </table>
+
 
   <h3 style="text-align: center;"> Hail to the King Baby </h3>
 

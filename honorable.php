@@ -63,6 +63,35 @@ th {
 tr {
     font-size: larger;
 }
+.button {
+  display: block;
+  width: 70%;
+  border: none;
+  background-color: gray;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 15%;
+  border-radius: 4px;
+  box-shadow: 0 9px #999;
+  font-size: 1.5em;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+.button:active {
+ background-color: black;
+ box-shadow: 0 5px #666;
+ transform: translateY(4px);
+}
+
+
+.button:hover:hover {
+  background-color: black;
+  color: white;
+}
 
 
 
@@ -74,51 +103,51 @@ tr {
     <tr><th colspan="2" class="tabletop">Honorable Mentions</th></tr>
     <tr>
       <th>Movie Name</th>
-      <th>Edit</th> 
+      <th>Remove</th> 
     </tr>
     <tr>
       <td>Princess Bride</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
       <td>John Wick</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
       <td>Monty Python and the Holy Grail</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
       <td>Shrek</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
       <td>The Big Lebowski</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
       <td>Spaceballs</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
       <td>Megamind</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
       <td>Ace Ventura when Nature Calls</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
       <td>Army of Darkness</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
       <td>Lord of the Rings Fellowship of the ring</td>
-      <td><button>Edit</button></td>
+      <td><button>Remove</button></td>
     </tr>
   </table>
 
-
+<button class="button">Add a Cinematic to the list here!</button>
 
 
 </body>
