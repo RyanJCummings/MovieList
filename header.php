@@ -118,10 +118,15 @@ _LOGGEDIN;
 echo <<<_GUEST
 
             <div class="navbar">
-                <<a href='index.php'>Home</a>
+                <a href='index.php'>Home</a>
                 <a href='signup.php'>Sign Up</a>
-                <a href='login.php'>Log In</a>
-            </div>
+		<a href='login.php'>Log In</a>
+	    </div>
+  <div style="float:right">
+    <a class="about" href='about.php'style="box-shadow:1px 1px 1px 1px black inset">About</a>
+  </div>
+</div>
+
 _GUEST;
  }
 
