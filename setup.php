@@ -15,29 +15,19 @@ require_once 'functions.php';
 createTable('members',
             'user VARCHAR(16),
             pass VARCHAR(16),
+	    user_id INT NOT NULL AUTO_INCREMENT,
+	    PRIMARY KEY(user_id)');
 
-	    INDEX(user(6))');
+createTable('movies',
+            'movie_id INT NOT NULL AUTO_INCREMENT,
+	    title VARCHAR(50),
+	    PRIMARY KEY(movie_id)');
 
-createTable('messages',
-            'id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-            auth VARCHAR(16),
-            recip VARCHAR(16),
-            pm CHAR(1),
-            time INT UNSIGNED,
-            message VARCHAR(4096),
-            INDEX(auth(6)),
-            INDEX(recip(6))');
+createTable('tv_shows',
+            'tv_id INT NOT NULL AUTO_INCREMENT,
+	    title VARCHAR(50),
+	    PRIMARY KEY(tv_id)');
 
-createTable('friends',
-            'user VARCHAR(16),
-            friend VARCHAR(16),
-            INDEX(user(6)),
-            INDEX(friend(6))');
-
-createTable('profiles',
-            'user VARCHAR(16),
-            text VARCHAR(4096),
-            INDEX(user(6))');
 ?>
 
     <p>The database is ready to go.</p>

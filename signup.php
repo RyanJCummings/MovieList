@@ -35,7 +35,39 @@ if (isset($_POST['user'])) {
         if ($result->num_rows)
             $error = 'That username already exists<br><br>';
         else {
-            queryMysql("INSERT INTO members VALUES('$user', '$pass')");
+	    queryMysql("INSERT INTO members VALUES('$user', '$pass')");
+	    createTable("{$user}_topMovies",
+			'user_id INT(6),
+			movie_id INT(6)');
+	    
+	    createTable("{$user}_topTV",
+			'user_id INT(6),
+			tv_id INT(6)');
+
+	    createTable("{$user}_bottomMovies",
+			'user_id INT(6),
+			movie_id INT(6)');
+
+	    createTable("{$user}_bottomTV",
+		    	'user_id INT(6),
+			tv_id INT(6)');
+
+	    createTable("{$user}_honorableMovies",
+			'user_id INT(6),
+			movie_id INT(6)');
+
+	    createTable("{$user}_honorableTV",
+			'user_id INT(6),
+			tv_id INT(6)');
+
+	    createTable("{$user}_watchlist_movies",
+		    	'user_id INT(6),
+			movie_id INT(6)');
+
+	    createTable("{$user}_watchlist_tv",
+	    		'user_id INT(6),
+			tv_id INT(6)');		
+
             die('<h4>Account created</h4>Please Log in.</div></body></html>');
         }
     }
