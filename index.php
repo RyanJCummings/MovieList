@@ -5,8 +5,8 @@ require_once 'header.php';
 
 
 
-
 echo <<<_END
+
 
 <title>Cine-Files</title>
 <head>
