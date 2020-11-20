@@ -10,4 +10,6 @@ if (isset($_POST['user'])) {
     else
         echo "<span class='available'>&nbsp;&#x2714; " . "The username '$user' is available</span>";
 }
+
 ?>
+

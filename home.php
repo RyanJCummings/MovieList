@@ -7,6 +7,7 @@ echo <<<_Home
 
 <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
 <style>
 
 * {
@@ -106,10 +107,13 @@ html {
 }
 
 
+
   #content {
 	background-color: #4E1003;
   	height: 100%;
+
   	background-size: 100%;	
+
 	background-image: url("curtain02.jpg");		
  }
 	
@@ -140,6 +144,7 @@ body{
     #test{
         font-weight: bold;
         font-size: xx-large;
+
 }
 
 
@@ -150,6 +155,18 @@ body{
 
 <body>
 <h1>Toto, I've a feeling we're not in Kansas anymore <h1>
+    <div class="wrapper2">
+
+        <div class="backdrop"></div>
+
+        <div class="stage_floor"></div>
+
+        <div class="stage_highlight"></div>
+
+        <div class="spotlight_swivel">
+
+            <div class="lamp"></div>
+
 
 <div class="wrapper2">
      <div class="backdrop"></div>
@@ -163,6 +180,9 @@ body{
 <iframe style="position:relative; z-index:1000;"  width="956" height="538" src="https://www.youtube.com/embed/4HvE_bz9imA" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
+
+
+        </div>
 
 
     <div class="container" style="position: relative">

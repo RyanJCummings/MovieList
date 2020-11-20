@@ -1,6 +1,7 @@
 <?php
 require_once 'header.php';
 
+
 echo<<<_END
 
 <style>
@@ -56,6 +57,7 @@ h2{
   </style>
 _END;
 
+
 $error = $user = $pass = "";
 
 if (isset($_POST['user'])) {
@@ -73,16 +75,20 @@ if (isset($_POST['user'])) {
         else {
             $_SESSION['user'] = $user;
             $_SESSION['pass'] = $pass;
+
             die("<h3>Welcome back, $user.</h3><p>Please <a href='home.php?view=$user'>click here</a> to continue.</p></div><footer></footer></body></html>");
+
         }
     }
 }
 
 echo <<<_END
 
+
    <h1>Welcome, please login!</h1>
 		
    <form method='post' action='login.php'>
+
         <div data-role='fieldcontain'>
             <label></label>
             <span class='error'>$error</span>
