@@ -94,7 +94,7 @@ if (isset($_POST['user'])) {
         if ($result->num_rows)
             $error = 'That username already exists<br><br>';
         else {
-	    queryMysql("INSERT INTO members VALUES('$user', '$pass')");
+	    queryMysql("INSERT INTO members (user, pass) VALUES('$user', '$pass')");
 	    createTable("{$user}_topMovies",
 			'user_id INT(6),
 			movie_id INT(6)');

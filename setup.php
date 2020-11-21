@@ -18,6 +18,9 @@ createTable('members',
 	    user_id INT NOT NULL AUTO_INCREMENT,
 	    PRIMARY KEY(user_id)');
 
+queryMysql("INSERT INTO members(user, pass)
+	    VALUES ('base', 'base')");
+
 createTable('movies',
             'movie_id INT NOT NULL AUTO_INCREMENT,
 	    title VARCHAR(50),
