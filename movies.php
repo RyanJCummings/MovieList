@@ -224,67 +224,91 @@ img {vertical-align: middle;}
    text-shadow: 5px 5px black;
 }
 
+
+.button {
+
+  width: 100%;
+  height: 100%
+  border: none;
+  background-color: gray;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 9px #999;
+  font-size: 1.5em;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+.button:active {
+ background-color: black;
+ box-shadow: 0 5px #666;
+ transform: translateY(4px);
+}
+
+
+.button:hover:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
 </style>
 </head>
 <body>
 
 <table id="t01">
-  <tr><th colspan="3" class="tabletop">Top Ten Favorite Movies</th></tr>
+  <tr><th colspan="2" class="tabletop">Top Ten Favorite Movies</th></tr>
   <tr>
-    <th>Movie Rank</th>
     <th>Movie Name</th>
-    <th>Edit</th> 
+    <th>Remove</th> 
   </tr>
   <tr>
-    <td>1.</td>
     <td>Princess Bride</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>2.</td>
     <td>John Wick</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>3.</td>
     <td>Monty Python and the Holy Grail</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>4.</td>
     <td>Shrek</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>5.</td>
     <td>The Big Lebowski</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>6.</td>
     <td>Spaceballs</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>7.</td>
     <td>Megamind</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>8.</td>
     <td>Ace Ventura when Nature Calls</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>9.</td>
     <td>Army of Darkness</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
   <tr>
-    <td>10.</td>
     <td>Lord of the Rings Fellowship of the ring</td>
-    <td><button>Edit</button></td>
+    <td><button>Remove</button></td>
   </tr>
+    <tr>
+        <td colspan="2"><button class="button">Add a Cinematic to the list here!</button></td>
+    </tr>
+
 </table>
 
 
@@ -309,62 +333,56 @@ document.getElementById('answer').innerHTML= "<img src= '"+posterurl+"'><h2>Year
 
 
 <table id="t02">
-    <tr><th colspan="3" class="tabletop">Top Ten Least Favorite Movies</th></tr>
+    <tr><th colspan="2" class="tabletop">Top Ten Least Favorite Movies</th></tr>
     <tr>
-      <th>Movie Rank</th>
       <th>Movie Name</th>
-      <th>Edit</th> 
+      <th>Remove</th> 
     </tr>
     <tr>
-      <td>1.</td>
-      <td>Princess Bride</td>
-      <td><button>Edit</button></td>
+      <td>The Room</td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>2.</td>
-      <td>John Wick</td>
-      <td><button>Edit</button></td>
+      <td>Bowling for Columbine</td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>3.</td>
-      <td>Monty Python and the Holy Grail</td>
-      <td><button>Edit</button></td>
+      <td>Cats</td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>4.</td>
-      <td>Shrek</td>
-      <td><button>Edit</button></td>
+      <td>Frozen 2</td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>5.</td>
-      <td>The Big Lebowski</td>
-      <td><button>Edit</button></td>
+      <td>Star wars Revenge of the Sith</td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>6.</td>
-      <td>Spaceballs</td>
-      <td><button>Edit</button></td>
+      <td>Eragon</td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>7.</td>
-      <td>Megamind</td>
-      <td><button>Edit</button></td>
+      <td>Star Whores</td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>8.</td>
-      <td>Ace Ventura when Nature Calls</td>
-      <td><button>Edit</button></td>
+      <td>Star Whores</td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>9.</td>
-      <td>Army of Darkness</td>
-      <td><button>Edit</button></td>
+      <td>Mac and Me</td>
+      <td><button>Remove</button></td>
     </tr>
     <tr>
-      <td>10.</td>
-      <td>Lord of the Rings Fellowship of the ring</td>
-      <td><button>Edit</button></td>
+      <td>Soul Plane</td>
+      <td><button>Remove</button></td>
     </tr>
+
+    <tr>
+        <td colspan="2"><button class="button">Add a Cinematic to the list here!</button></td>
+    </tr>
+
   </table>
 
 <div class="slideshow-container">

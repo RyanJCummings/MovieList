@@ -155,17 +155,6 @@ body{
 
 <body>
 <h1>Toto, I've a feeling we're not in Kansas anymore <h1>
-    <div class="wrapper2">
-
-        <div class="backdrop"></div>
-
-        <div class="stage_floor"></div>
-
-        <div class="stage_highlight"></div>
-
-        <div class="spotlight_swivel">
-
-            <div class="lamp"></div>
 
 
 <div class="wrapper2">
@@ -182,10 +171,9 @@ body{
 </div>
 
 
-        </div>
+        
 
-
-    <div class="container" style="position: relative">
+   <div class="container" style="position: relative">
         <div id="test">
             <h3 style="color:white; text-shadow: 10px 10px black;">What, Why, and How</h3>
             <p style="color:white; text-shadow: 7px 7px black;"> Our initial and main goal was to establish a place where movie and show lovers can catalog and curate lists of their favorite cinematic adventures. Within each

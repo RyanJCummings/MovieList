@@ -30,9 +30,10 @@ createTable('tv_shows',
             'tv_id INT NOT NULL AUTO_INCREMENT,
 	    title VARCHAR(50),
 	    PRIMARY KEY(tv_id)');
-
 ?>
 
     <p>The database is ready to go.</p>
 </body>
 </html>
+
+
